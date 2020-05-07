@@ -1,0 +1,629 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Blueprint Brand Assets</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="3c6540b2-cfa5-48d1-bb8b-2ba562aebe4c" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="Blueprint%20Brand%20Assets/logo%201.png"/></div><h1 class="page-title">Blueprint Brand Assets</h1></header><div class="page-body"><h1 id="89f42803-5127-4ba0-ab9d-722d233e5e79" class="">Our name</h1><p id="6b05a545-7bd6-4de7-9878-a33190aaf1dd" class="">“Blueprint” is one word, spelled with a big B and a little p.</p><p id="ff0f719c-192d-40dc-b3f7-4566409084fe" class="">In our logos, it is spelled entirely in lowercase, to give a friendlier feel.
+</p><hr id="439dfc24-5f40-4d6e-b3d0-ab68f6c9e156"/><h1 id="fdd1a8c8-c75c-46d9-b460-ab2e46da39da" class="">Our logo</h1><p id="fb542239-d405-4e33-85e5-6f5ffb9e367f" class="">There are 3 possible orientations for our logo (with full-color and negative for each).</p><figure id="e5ad5d3b-ea43-4429-b1b7-8dae18c56ef0"><div class="block-color-gray_background source"><a href="Blueprint%20Brand%20Assets/logos.zip">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6c234587-9192-4608-9506-c741d55f2e58/logos.zip</a></div><figcaption>Download all logos</figcaption></figure><h2 id="516552df-348f-43a1-8ae9-b746edd8eedb" class=""><strong>Banner logo</strong></h2><div id="76df9f1e-7bbb-446a-82a7-69c9c11acd26" class="column-list"><div id="af2966ea-1e58-409d-82ce-19fa6e037585" style="width:50%" class="column"><figure id="51e70dec-0ded-460b-8e05-a2b046b3f42a" class="image"><a href="Blueprint%20Brand%20Assets/Untitled.png"><img style="width:336px" src="Blueprint%20Brand%20Assets/Untitled.png"/></a><figcaption>Full-color banner</figcaption></figure><figure id="e7ea3e67-05e4-488c-bd11-c97a087a3f18"><div class="block-color-gray_background source"><a href="Blueprint%20Brand%20Assets/banner.png">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f9cbdc7b-7fdb-4c14-8335-4794de27eee9/banner.png</a></div></figure></div><div id="21b512de-c067-4147-b61a-86e318a1ff0d" style="width:50%" class="column"><figure id="4572f600-ab83-4a8c-836b-862f325a4141" class="image"><a href="Blueprint%20Brand%20Assets/Untitled%201.png"><img style="width:288px" src="Blueprint%20Brand%20Assets/Untitled%201.png"/></a><figcaption>Negative banner </figcaption></figure><figure id="fd29aa8d-8abb-4dac-b4e1-05dcc3b3b780"><div class="block-color-gray_background source"><a href="Blueprint%20Brand%20Assets/banner_negative.png">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5ac8ca47-f730-4482-a345-f7544f7ab7be/banner_negative.png</a></div></figure></div></div><hr id="e5964592-f9a4-445a-a6f3-04a9e2d5456d"/><h2 id="5212f69d-424c-45ef-ab36-27068064ac20" class="">Square logo</h2><div id="1db93fa9-61d5-4282-a416-cd4cc9283308" class="column-list"><div id="40a25f62-6f4a-40d2-8b04-d81c0c1cec17" style="width:50%" class="column"><figure id="0f366d31-633b-4a7b-ab41-91a75d44d0db" class="image"><a href="Blueprint%20Brand%20Assets/Untitled%202.png"><img style="width:192px" src="Blueprint%20Brand%20Assets/Untitled%202.png"/></a><figcaption>Full-color square</figcaption></figure><figure id="8ed2198d-ba41-4a4f-981a-e2ab3892bfe6"><div class="block-color-gray_background source"><a href="Blueprint%20Brand%20Assets/square.png">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/aa2242c2-977a-4b4b-bcac-699ad0f77df9/square.png</a></div></figure></div><div id="0a7b7be8-f1c2-4e16-9e5c-04dcab6790f9" style="width:50%" class="column"><figure id="c65641b4-9011-4439-8f67-ae0e2db8b3b9" class="image"><a href="Blueprint%20Brand%20Assets/Untitled%203.png"><img style="width:192px" src="Blueprint%20Brand%20Assets/Untitled%203.png"/></a><figcaption>Negative square</figcaption></figure><figure id="53191846-16a4-4f59-9632-aba0f1b4a252"><div class="block-color-gray_background source"><a href="Blueprint%20Brand%20Assets/square_negative.png">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e7dddb00-9717-4b89-9842-d6d87d44c725/square_negative.png</a></div></figure></div></div><hr id="6ac35e4e-ecc0-4b7b-8fec-55ba6b8872da"/><h2 id="cfe98ae8-2e0f-45cc-96a6-33b79589af00" class="">Standalone logo </h2><div id="463c8302-5f18-4e39-8d0f-9ec38cdf75d0" class="column-list"><div id="2b056182-0e0d-4538-8172-a26d05451ee7" style="width:50%" class="column"><figure id="f7f43513-1608-4cde-b3fb-dfd4206c4478" class="image"><a href="Blueprint%20Brand%20Assets/Untitled%204.png"><img style="width:192px" src="Blueprint%20Brand%20Assets/Untitled%204.png"/></a><figcaption>Full-color</figcaption></figure><figure id="1ce9104a-d768-42d0-8310-6e927d212c3e"><div class="block-color-gray_background source"><a href="Blueprint%20Brand%20Assets/logo.png">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4b23dafb-43c8-42c8-8a24-e15ae88861bf/logo.png</a></div></figure><p id="f1648319-d5e3-4508-b5fa-65118c23ee64" class="">
+</p></div><div id="b698caf9-084a-4f3e-b6e0-380f15876a82" style="width:50%" class="column"><figure id="1cbf8180-5f3d-419d-86cc-ce3cfb720ddb" class="image"><a href="Blueprint%20Brand%20Assets/Untitled%205.png"><img style="width:192px" src="Blueprint%20Brand%20Assets/Untitled%205.png"/></a><figcaption>Negative</figcaption></figure><figure id="4a41a127-5573-41d9-91fe-9e208d42e9de"><div class="block-color-gray_background source"><a href="Blueprint%20Brand%20Assets/logo_negative.png">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2b95aafb-94c8-42f7-b50c-91e455c3316f/logo_negative.png</a></div></figure></div></div><hr id="e31f049b-2a5c-4b34-84f3-29d3d60f837b"/><h1 id="7f0afbd9-654a-470c-9585-ebb3aa9189e7" class="">Our colors</h1><figure id="bce81cfc-d0ff-46d1-a93e-7d65152f8a11" class="image"><a href="Blueprint%20Brand%20Assets/ScreenShot2018-10-02at11.01.22AM.png"><img style="width:768px" src="Blueprint%20Brand%20Assets/ScreenShot2018-10-02at11.01.22AM.png"/></a></figure><p id="0f7b7b80-a989-476d-be44-fa2616b0f102" class="">Primary Blue</p><pre id="3894672a-0b05-49b2-b76b-8f97a005c316" class="code"><code>Primary Blue: #0078E8
+Secondary Blue: #93C9FE
+Text Color: #333333
+Negative: #FFFFFF</code></pre><hr id="e1d2cb1d-090e-4c10-9dbc-983d6a6b1f31"/><h1 id="f6f691d1-8a53-41bb-894f-50ea9d76e8aa" class="">Our font</h1><p id="79276f83-1c01-456a-b428-e669693d8a8d" class="">We use <a href="https://fonts.google.com/specimen/Poppins"><strong>Poppins</strong></a>, a Google font.</p><figure id="0b4fa019-4e58-45ee-9b2c-4f145c0d6830"><div class="block-color-gray_background source"><a href="Blueprint%20Brand%20Assets/poppins.zip">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ecd9589d-9bd9-49ee-972e-fbd01d173204/poppins.zip</a></div></figure><p id="ca7287b4-385b-4a38-818e-80f1c82e9d85" class="">In logos, the font is <strong>Poppins semi-bold 600</strong>.</p><p id="43f0f5dd-5aac-461c-a5e0-63f63063f366" class="">
+</p><hr id="95c43e03-9152-4d9d-bdcb-16c5aea439a7"/><h1 id="e1e77f19-39a2-4cae-a40e-4caf5951b4ac" class="">Please do</h1><p id="ffe6405d-b350-4058-b5dd-2e1b7575dee0" class="">Provide plenty of space around the Blueprint logo. Make it big, make it small, just give it the chance to breathe and not feel cluttered.</p><p id="083f0e26-ede8-4306-a276-af1d59ad893d" class="">
+</p></div></article></body></html>
