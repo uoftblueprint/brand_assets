@@ -15,33 +15,33 @@ There are 3 possible orientations for our logo (with full-color and negative for
 ## Banner Logo
 ### Full Color Banner
 ![](img/img_banner.png)
-* /logo/banner.png
+* file: [/logo/banner.png](/logo/banner.png)
 
 ### Negative Banner
 ![](img/img_banner_neg.png)
-* /logo/banner_negative.png
+* file: [/logo/banner_negative.png](/logo/banner_negative.png)
   
 ---
 
 ## Square Logo
 ### Full Color Square
 ![](img/img_square.png)
-* logo/square.png
+* file: [logo/square.png](logo/square.png)
 
 ### Negative Square Logo
 ![](img/img_square_neg.png)
-* logo/square.png
+* file: [logo/square.png](logo/square.png)
 
 ---
 
 ## Standalone Logo
 ### Full Color Standalone
 ![](img/img_logo.png)
-* /logo/square.png
+* file: [/logo/square.png](/logo/square.png)
 
 ### Negative Standalone Logo
 ![](img/img_logo_neg.png)
-* /logo/square_negative.png
+* file: [/logo/square_negative.png](/logo/square_negative.png)
 
 ---
 ## Our Colors
@@ -58,7 +58,7 @@ Negative: #FFFFFF
 ## Our font
 We use Poppins, a Google font.
 
-https://fonts.google.com/specimen/Poppins
+file: https://fonts.google.com/specimen/Poppins
 
 In logos, the font is Poppins semi-bold 600.
 
